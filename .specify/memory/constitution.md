@@ -1,55 +1,59 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: 1.0.0 → 1.1.0
+Modified principles: [PRINCIPLE_1_NAME] → Purpose & Target Audience, [PRINCIPLE_2_NAME] → Spec-Driven Development Methodology, [PRINCIPLE_3_NAME] → AI Usage & Governance, [PRINCIPLE_4_NAME] → Writing & Content Standards, [PRINCIPLE_5_NAME] → Code & Technical Quality Standards, [PRINCIPLE_6_NAME] → UI/UX, Accessibility & Performance Rules
+Added sections: Learning Progression Model, Tooling & Deployment Requirements
+Removed sections: None
+Templates requiring updates: ⚠ pending - .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+Follow-up TODOs: RATIFICATION_DATE needs to be determined
+-->
+
+# AI / Spec-Driven Book Creation Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Purpose & Target Audience
+This constitution governs the creation of an AI-assisted, Spec-Driven textbook built using Docusaurus and deployed via GitHub Pages, produced as an official hackathon deliverable. The book is explicitly designed for absolute beginners and prioritizes production-grade implementation over theory, while enforcing strict standards for specifications, validation, accessibility, performance, and deployment.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+This document is the single source of truth. Any artifact that violates this constitution is considered non-compliant and invalid.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Spec-Driven Development Methodology
+Spec-Kit Plus is mandatory for every chapter, every feature, every example, and every implementation. No chapter may exist without a corresponding spec. Each spec MUST explicitly define Purpose, Inputs, Outputs, Constraints, and Validation criteria.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### AI Usage & Governance
+AI tools are permitted only as content refiners, editors, and structure improvers. AI tools MUST NOT act as autonomous authors or decision-makers. If AI APIs are required, Google Gemini MUST be used; OpenAI APIs are explicitly disallowed. All AI-assisted content MUST be reviewed, verified, and explicitly aligned with its governing spec.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Writing & Content Standards
+Content should follow minimal theory, maximum implementation, step-by-step execution, beginner-first explanations, and production-grade examples. The following are strictly forbidden: Long theoretical essays, placeholder or dummy code, pseudocode without execution context, unverified or hallucinated AI output.
 
-### [PRINCIPLE_6_NAME]
+### Code & Technical Quality Standards
+All code and implementations MUST be production-grade, follow industry best practices, be buildable and deployable, use clear naming and structure. JavaScript is the default language; TypeScript MAY be used only if explicitly required and justified in the governing spec. Code that does not run or cannot be validated is non-compliant.
 
+### UI/UX, Accessibility & Performance Rules
+A Purple + Neon theme MUST be applied consistently across pages, components, navigation, and UI elements. All images and screenshots MUST include meaningful alt text. Lazy loading is mandatory for images and media assets. Mobile-first design is mandatory with layouts tested across viewports 320px to 2560px.
 
-[PRINCIPLE__DESCRIPTION]
+## Learning Progression Model
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+The book MUST follow a progressive complexity structure:
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+* **Weeks 1–2:** Fundamentals
+* **Weeks 3–10:** Core skills
+* **Weeks 11–13:** Advanced integration
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Introducing advanced topics before prerequisite stages is prohibited.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Tooling & Deployment Requirements
+
+### Tooling
+* **Docusaurus** is mandatory
+* Markdown / MDX MUST follow Docusaurus standards
+
+### Deployment
+The book MUST:
+* Be deployed on **GitHub Pages**
+* Be publicly accessible
+* Build successfully without errors
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This project is a hackathon submission. Any contribution that violates this constitution MUST be rejected and MUST be removed or corrected. No exceptions are permitted for time pressure, AI-generated content, or contributor experience level. This constitution is the single source of truth and supersedes all other practices.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1 | **Ratified**: TODO(RATIFICATION_DATE): Date of original adoption to be determined | **Last Amended**: 2025-12-14
