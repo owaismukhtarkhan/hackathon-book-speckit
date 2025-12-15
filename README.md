@@ -2,6 +2,8 @@
 
 A Spec-Driven Book for Absolute Beginners
 
+<!-- GitHub Pages Deployment Trigger -->
+
 ## Overview
 
 This repository contains the source code for the "Physical AI & Humanoid Robotics" book, built with Docusaurus and designed for educational purposes.
