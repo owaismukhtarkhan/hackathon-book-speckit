@@ -1,0 +1,65 @@
+{
+  "name": "hackathon-book-speckit",
+  "version": "1.0.0",
+  "description": "Physical AI & Humanoid Robotics Book - A Spec-Driven Book for Absolute Beginners",
+  "main": "index.js",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "prebuild": "node scripts/validate-env.js",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "validate-env": "node scripts/validate-env.js",
+    "health-check": "node scripts/health-check.js",
+    "health-check:local": "node scripts/health-check.js --local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owaismukhtarkhan/hackathon-book-speckit.git"
+  },
+  "keywords": [
+    "docusaurus",
+    "physical-ai",
+    "robotics",
+    "education"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/owaismukhtarkhan/hackathon-book-speckit/issues"
+  },
+  "homepage": "https://github.com/owaismukhtarkhan/hackathon-book-speckit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
+    "@mdx-js/react": "^3.1.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

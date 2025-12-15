@@ -1,0 +1,95 @@
+# API Contract: Content Delivery
+
+## Base URL
+```
+https://owaismukhtarkhan.github.io/hackathon-book-speckit/api
+```
+
+## Endpoints
+
+### GET /content/{id}
+Retrieve specific book content by ID
+
+**Path Parameters**:
+- `id` (string, required): Unique identifier of the content
+
+**Response**:
+```
+{
+  "id": "string",
+  "title": "string",
+  "content": "mdx content as string",
+  "module": "integer",
+  "week": "integer",
+  "type": "text|code|exercise|assessment",
+  "difficulty": "beginner|intermediate|advanced",
+  "prerequisites": ["string"],
+  "learningObjectives": ["string"],
+  "validation": "string"
+}
+```
+
+### GET /modules
+Retrieve all learning modules
+
+**Response**:
+```
+[
+  {
+    "id": "string",
+    "title": "string",
+    "description": "string",
+    "weekRange": {
+      "start": "integer",
+      "end": "integer"
+    },
+    "topics": ["string"],
+    "learningObjectives": ["string"],
+    "prerequisites": ["string"],
+    "assessments": ["string"],
+    "resources": ["string"]
+  }
+]
+```
+
+### POST /progress
+Save user progress for a specific content item
+
+**Request Body**:
+```
+{
+  "userId": "string (anonymous)",
+  "contentId": "string",
+  "status": "not_started|in_progress|completed",
+  "score": "number (for assessments)",
+  "timeSpent": "number (seconds)"
+}
+```
+
+**Response**:
+```
+{
+  "success": "boolean",
+  "message": "string"
+}
+```
+
+### GET /progress/{userId}/{contentId}
+Retrieve user progress for a specific content item
+
+**Path Parameters**:
+- `userId` (string, required): Anonymous user identifier
+- `contentId` (string, required): Content identifier
+
+**Response**:
+```
+{
+  "userId": "string",
+  "contentId": "string",
+  "status": "not_started|in_progress|completed",
+  "completionDate": "string (ISO date)",
+  "score": "number",
+  "timeSpent": "number (seconds)",
+  "lastAccessed": "string (ISO date)"
+}
+```
