@@ -18,20 +18,26 @@ The repository already contains the correct workflow configuration in `.github/w
    - **Folder**: `/ (root)` (this is the default)
 4. Click **Save**
 
-## 3. Wait for Deployment
+## 3. Alternative: Manual gh-pages Branch Creation
+
+If the GitHub Actions workflow fails to create the `gh-pages` branch automatically,
+a manual `gh-pages` branch has been created with a basic site structure that can
+serve as a placeholder until the Docusaurus build issue is resolved.
+
+## 5. Wait for Deployment
 
 After configuring GitHub Pages:
 1. The GitHub Actions workflow will automatically run on the next push to `main`
 2. The workflow builds the site and pushes to the `gh-pages` branch
 3. GitHub Pages serves the site from that branch
 
-## 4. Access Your Site
+## 6. Access Your Site
 
 Your site will be available at:
 - `https://<username>.github.io/<repository-name>/`
 - For this repository: `https://owaismukhtarkhan.github.io/hackathon-book-speckit/`
 
-## 5. Troubleshooting
+## 7. Troubleshooting
 
 If you still see the README instead of the Docusaurus site:
 
@@ -40,7 +46,7 @@ If you still see the README instead of the Docusaurus site:
 3. **Check Actions**: Verify the workflow completed successfully in the Actions tab
 4. **Check branch**: Ensure the `gh-pages` branch exists after a successful build
 
-## 6. Custom Domain (Optional)
+## 8. Custom Domain (Optional)
 
 If you want to use a custom domain:
 1. Add a `CNAME` file in the root with your domain name
